@@ -1,0 +1,283 @@
+@import "../../common/vars";
+@import "../../common/mixins";
+
+//@-webkit-keyframes test {
+//  0% {
+//    opacity: 1;
+//  }
+//  50% {
+//    opacity: 0.5;
+//  }
+//  100% {
+//  }
+//}
+
+@keyframes background-1 {
+  0% {
+    opacity: 1;
+  }
+  25%{
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+
+@keyframes background-2 {
+  0% {
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+  }
+}
+
+@keyframes background-3 {
+  0% {
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+
+//@keyframes test {
+//  0% {
+//    opacity: 1;
+//  }
+//  50% {
+//    opacity: 0;
+//  }
+//  100% {
+//  }
+//}
+
+.home {
+  height: 100%;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    opacity: 0.8;
+  }
+
+  &__header-logo {
+    font-family: $font-family-logo;
+    font-size: 21px;
+    color: #333333;
+    padding: 16px 20px;
+    @include for-phone-only {
+      font-size: 16px;
+      padding: 8px 8px;
+    }
+  }
+
+  &__header-phone-link {
+    font-family: $font-family-logo;
+    font-size: 21px;
+    color: #4C7FB2;
+    display: block;
+    padding: 16px 20px;
+    @include for-phone-only {
+      font-size: 16px;
+      padding: 8px 8px;
+    }
+  }
+
+  &__main-screen {
+    //background: url('images/background-3.jpg') no-repeat;
+    background-size: contain;
+    height: 75vw;
+    width: 100vw;
+    max-height: calc(100vh - 61px);
+    margin-top: 61px;
+
+    @include for-tablet-landscape-up {
+      background-size: cover;
+    }
+
+    @include for-desktop-up {
+      //background: url('images/background-3.jpg') 0 -30vh no-repeat;
+      background-size: cover;
+    }
+    @include for-phone-only {
+      margin-top: 38px;
+    }
+  }
+
+  &__main-screen-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation-duration: 10s;
+    //animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-play-state: running
+  }
+
+  &__main-screen-background_1 {
+    //animation-delay: 5s;
+    //-webkit-animation-delay: 5s;
+    background: url('images/background-1.jpg') no-repeat;
+    background-size: contain;
+    animation-name: background-1;
+    @include for-desktop-up {
+      background: url('images/background-1.jpg') 0 -30vh no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__main-screen-background_2 {
+    //animation-delay: 5s;
+    //-webkit-animation-delay: 5s;
+    background: url('images/background-2.jpg') no-repeat;
+    background-size: contain;
+    animation-name: background-2;
+    opacity: 0;
+    @include for-desktop-up {
+      background: url('images/background-2.jpg') 0 -30vh no-repeat;
+      background-size: cover;
+    }
+  }
+
+  //&__main-screen-background_3 {
+  //  animation-delay: 10s;
+  //  -webkit-animation-delay: 10s;
+  //  background: url('images/background-3.jpg') no-repeat;
+  //  background-size: contain;
+  //  @include for-desktop-up {
+  //    background: url('images/background-3.jpg') 0 -30vh no-repeat;
+  //    background-size: cover;
+  //  }
+  //}
+
+  &__main-screen-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include for-phone-only {
+      background-color: #353c6f45;
+    }
+  }
+
+  &__title {
+    padding-left: 6vw;
+    font-family: $font-family-logo;
+    font-size: 28px;
+    color: #ecebe9;
+    @include for-desktop-up {
+      padding-left: 10vw;
+    }
+    @include for-phone-only {
+      font-size: 18px;
+    }
+  }
+
+  &__main-screen-advantages-list {
+    font-family: $font-family-logo;
+    color: #ecebe9;
+    font-size: 21px;
+    padding-top: 5vw;
+    padding-left: calc(6vw + 25px);
+    @include for-desktop-up {
+      padding-top: 2vw;
+      padding-left: calc(10vw + 25px);
+    }
+    @include for-phone-only {
+      font-size: 14px;
+      padding-top: 5px;
+    }
+  }
+
+  &__main-screen-advantages-list-item {
+    padding-bottom: 5vw;
+    @include for-desktop-up {
+      padding-bottom: 2vw;
+    }
+    @include for-phone-only {
+      padding-bottom: 8px;
+    }
+  }
+
+  &__main-screen-contact-button {
+    margin-left: 6vw;
+    @include for-desktop-up {
+      margin-left: 10vw;
+    }
+  }
+
+  &__advantages-screen {
+    margin-top: 80px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    @include for-desktop-up {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    @include for-phone-only {
+      margin-top: 32px;
+    }
+  }
+
+  &__advantages-list-title {
+    font-family: $font-family;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+    @include for-phone-only {
+      font-size: 18px;
+    }
+  }
+
+  &__advantages-list-block {
+    margin-bottom: 48px;
+    @include for-phone-only {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__advantages-list-block-title {
+    font-family: $font-family;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+
+  &__advantages-list-block-body {
+    font-family: $font-family;
+    font-size: 14px;
+    color: #0202029e;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+  }
+
+}
