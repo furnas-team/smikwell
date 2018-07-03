@@ -55,8 +55,8 @@ export class HomePage extends React.Component {
             </div>
             <div className="home__main-screen-background home__main-screen-background_2">
             </div>
-            {/*<div className="home__main-screen-background home__main-screen-background_3">*/}
-            {/*</div>*/}
+            <div className="home__main-screen-background home__main-screen-background_3">
+            </div>
             <div className="home__main-screen-container">
               <div className="home__main-screen-content">
                 <div className="home__title">
