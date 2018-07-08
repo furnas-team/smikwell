@@ -5,7 +5,7 @@
   0% {
     opacity: 1;
   }
-  13%{
+  13% {
     opacity: 1;
   }
   20% {
@@ -34,19 +34,19 @@
   16% {
     opacity: 0;
   }
-  20%{
+  20% {
     opacity: 0;
   }
-  23%{
+  23% {
     opacity: 0;
   }
   33% {
     opacity: 1;
   }
-  46%{
+  46% {
     opacity: 1;
   }
-  53%{
+  53% {
     opacity: 1;
   }
   66% {
@@ -75,13 +75,13 @@
   66% {
     opacity: 1;
   }
-  79%{
+  79% {
     opacity: 1;
   }
   82% {
     opacity: 1;
   }
-  87%{
+  87% {
     opacity: 1;
   }
   100% {
@@ -297,6 +297,117 @@
     color: #0202029e;
     letter-spacing: 0.2px;
     line-height: 20px;
+  }
+
+  &__advantages-screen {
+    margin-top: 80px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    @include for-desktop-up {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    @include for-phone-only {
+      margin-top: 32px;
+    }
+  }
+
+  &__carousel-title {
+    font-family: $font-family;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+    margin-top: 80px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    @include for-desktop-up {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    @include for-phone-only {
+      margin-top: 32px;
+      font-size: 18px;
+    }
+  }
+
+  &__carousel-item-1 {
+    background: url('images/background-1.jpg') no-repeat;
+    background-size: contain;
+    height: 75vw;
+    width: 100vw;
+    max-height: calc(100vh - 150px);
+    background-position: center;
+    @include for-tablet-landscape-up {
+      background-size: cover;
+    }
+  }
+
+  &__carousel-item-2 {
+    background: url('images/background-2.jpg') no-repeat;
+    background-size: contain;
+    height: 75vw;
+    width: 100vw;
+    max-height: calc(100vh - 150px);
+    background-position: center;
+    @include for-tablet-landscape-up {
+      background-size: cover;
+    }
+  }
+
+  &__carousel-item-3 {
+    background: url('images/background-3.jpg') no-repeat;
+    background-size: contain;
+    height: 75vw;
+    width: 100vw;
+    max-height: calc(100vh - 150px);
+    background-position: center;
+    @include for-tablet-landscape-up {
+      background-size: cover;
+    }
+  }
+
+  &__video-screen {
+    font-family: $font-family;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+    margin-top: 80px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    @include for-desktop-up {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    @include for-phone-only {
+      margin-top: 32px;
+      font-size: 18px;
+    }
+  }
+
+  &__video-title {
+    margin-bottom: 24px;
+  }
+
+  &__contacts-screen {
+    font-family: $font-family;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+    margin-top: 80px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    @include for-desktop-up {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    @include for-phone-only {
+      margin-top: 32px;
+      font-size: 18px;
+    }
+  }
+
+  &__contacts-title {
+    margin-bottom: 24px;
   }
 
 }

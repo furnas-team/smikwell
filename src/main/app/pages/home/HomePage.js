@@ -14,6 +14,7 @@ import {ThemeName, ThemeProvider} from '../../components/theme-context/ThemeCont
 import {ArticleName} from '../../common/models/ArticleName';
 import {ArticleLink, ArticleLinkSize} from '../../components/article-link/ArticleLink';
 import {Helmet} from 'react-helmet';
+import {Carousel, ResponsiveEmbed} from 'react-bootstrap';
 
 export class HomePage extends React.Component {
 
@@ -32,6 +33,10 @@ export class HomePage extends React.Component {
     this.setState({userContact: event.target.value});
   };
 
+  handleContactsButtonClick = () => {
+    window.scrollTo(0,document.body.scrollHeight);
+  };
+
   render() {
     return (
       <ThemeProvider value={ThemeName.LIGHT}>
@@ -45,8 +50,8 @@ export class HomePage extends React.Component {
               Smikwell
             </div>
             <div>
-              <a className="home__header-phone-link" href="tel:+7(999)999-99-99">
-                +7(999) 999-99-99
+              <a className="home__header-phone-link" href="tel:+7(916)466-66-30">
+                +7(916) 466-66-30
               </a>
             </div>
           </div>
@@ -67,7 +72,7 @@ export class HomePage extends React.Component {
                   <li className="home__main-screen-advantages-list-item">Качественно</li>
                   <li className="home__main-screen-advantages-list-item">Умно</li>
                 </ul>
-                <Button className="home__main-screen-contact-button">
+                <Button className="home__main-screen-contact-button" onClick={this.handleContactsButtonClick}>
                   Связаться
                 </Button>
               </div>
@@ -79,10 +84,10 @@ export class HomePage extends React.Component {
             </div>
             <div className="home__advantages-list-block">
               <div className="home__advantages-list-block-title">
-                Немецкий подъемный механизм
+                Надежный подъемный механизм
               </div>
               <div className="home__advantages-list-block-body">
-                Подъемный механизм на основе немецких газовых амортизаторов “Stabilus” рассчитан на 10 000 подъемов.
+                Сконструирован с использованием немецких газовых амортизаторов “Stabilus”, рассчитаных на 10 000 подъемов.
                 Стоит дорого, но гарантировано прослужит 25 лет без ремонта и замены.
                 Китайские, российские, польские и другие аналоги - могут не прослужить и года.
               </div>
@@ -133,6 +138,53 @@ export class HomePage extends React.Component {
                 которая увеличивает общую длину спального места более чем на 20 см.
                 Благодаря ей «спрятана» ниша между задней стенкой шкафа и изголовьем кровати.
               </div>
+            </div>
+          </div>
+          <div className="home__carousel-screen">
+            <div className="home__carousel-title">
+              Примеры шкаф-кроватей
+            </div>
+            <div>
+              <Carousel>
+                <Carousel.Item>
+                  <div className="home__carousel-item-1"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item-2"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item-3"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </div>
+          </div>
+          <div className="home__video-screen">
+            <div className="home__video-title">
+               Видео
+            </div>
+            <div>
+              <ResponsiveEmbed a16by9>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6rAIaHk8tYU" frameborder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+              </ResponsiveEmbed>
+            </div>
+          </div>
+          <div className="home__contacts-screen">
+            <div className="home__contacts-title">
+              Контакты
+            </div>
+            <div>
+              <a className="home__header-phone-link" href="tel:+7(916)466-66-30">
+                +7(916) 466-66-30
+              </a>
+              <a className="home__header-phone-link" href="mailto:smikwell@yandex.ru">
+                smikwell@yandex.ru
+              </a>
             </div>
           </div>
         </div>

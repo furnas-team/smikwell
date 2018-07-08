@@ -24,12 +24,13 @@ app.get("*", (req, res) => {
     <head>
       <meta charSet="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-      <meta name="google-site-verification" content="1mW_65D1liOX9N8PT2g81ybfDbx0kTiIljMcbA-gips" />
-      <meta name="yandex-verification" content="23009528c974f12d" />
       {helmet.title.toComponent()}
       {helmet.meta.toComponent()}
       {helmet.link.toComponent()}
       {/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>*/}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous"/>
       <link rel="stylesheet" type="text/css" href="/styles.css"/>
       {/*<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>*/}
     </head>
