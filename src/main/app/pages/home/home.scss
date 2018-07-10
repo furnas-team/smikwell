@@ -128,6 +128,7 @@
   &__main-screen {
     //background: url('images/background-3.jpg') no-repeat;
     background-size: contain;
+    background-position: center;
     height: 75vw;
     width: 100vw;
     max-height: calc(100vh - 61px);
@@ -330,40 +331,88 @@
     }
   }
 
-  &__carousel-item-1 {
-    background: url('images/background-1.jpg') no-repeat;
+  &__carousel-item {
     background-size: contain;
+    background-repeat: no-repeat;
     height: 75vw;
     width: 100vw;
     max-height: calc(100vh - 150px);
     background-position: center;
-    @include for-tablet-landscape-up {
-      background-size: cover;
-    }
+    //@include for-tablet-landscape-up {
+    //  background-size: cover;
+    //}
   }
 
-  &__carousel-item-2 {
-    background: url('images/background-2.jpg') no-repeat;
-    background-size: contain;
-    height: 75vw;
-    width: 100vw;
-    max-height: calc(100vh - 150px);
-    background-position: center;
-    @include for-tablet-landscape-up {
-      background-size: cover;
-    }
+  &__carousel-item_1 {
+    background-image: url('images/background-1.jpg');
   }
 
-  &__carousel-item-3 {
-    background: url('images/background-3.jpg') no-repeat;
-    background-size: contain;
-    height: 75vw;
-    width: 100vw;
-    max-height: calc(100vh - 150px);
-    background-position: center;
-    @include for-tablet-landscape-up {
-      background-size: cover;
-    }
+  &__carousel-item_2 {
+    background-image: url('images/background-2.jpg');
+  }
+
+  &__carousel-item_3 {
+    background-image: url('images/background-3.jpg');
+  }
+
+  &__carousel-item_4 {
+    background-image: url('images/background-4.jpg');
+  }
+
+  &__carousel-item_5 {
+    background-image: url('images/background-5.jpg');
+  }
+
+  &__carousel-item_6 {
+    background-image: url('images/background-6.jpg');
+  }
+
+  &__carousel-item_7 {
+    background-image: url('images/background-7.jpg');
+  }
+
+  &__carousel-item_8 {
+    background-image: url('images/background-8.jpg');
+  }
+
+  &__carousel-item_9 {
+    background-image: url('images/background-9.jpg');
+  }
+
+  &__carousel-item_10 {
+    background-image: url('images/background-10.jpg');
+  }
+
+  &__carousel-item_11 {
+    background-image: url('images/background-11.jpg');
+  }
+
+  &__carousel-item_12 {
+    background-image: url('images/background-12.jpg');
+  }
+
+  &__carousel-item_13 {
+    background-image: url('images/background-13.jpg');
+  }
+
+  &__carousel-item_14 {
+    background-image: url('images/background-14.jpg');
+  }
+
+  &__carousel-item_15 {
+    background-image: url('images/background-15.jpg');
+  }
+
+  &__carousel-item_16 {
+    background-image: url('images/background-16.jpg');
+  }
+
+  &__carousel-item_17 {
+    background-image: url('images/background-17.jpg');
+  }
+
+  &__carousel-item_18 {
+    background-image: url('images/background-18.jpg');
   }
 
   &__video-screen {
@@ -410,4 +459,8 @@
     margin-bottom: 24px;
   }
 
+}
+
+.embed-responsive{
+  min-height: 460px;
 }

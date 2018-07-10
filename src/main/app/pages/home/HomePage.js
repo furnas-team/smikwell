@@ -1,20 +1,10 @@
 import React from 'react';
 import './home.scss';
-import {Title} from '../../components/title/Title';
-import {Subtitle} from '../../components/subtitle/Subtitle';
-import {SectionTitle} from '../../components/section-title/SectionTitle';
-import {BlockTitle} from '../../components/block-title/BlockTitle';
-import {BlockText} from '../../components/block-text/BlockText';
-import {InputLabel} from '../../components/input-label/InputLabel';
-import {Input} from '../../components/input/Input';
 import {Button} from '../../components/button/Button';
-import {BlockSubtitle} from '../../components/block-subtitle/BlockSubtitle';
-import {Link} from '../../components/link/Link';
 import {ThemeName, ThemeProvider} from '../../components/theme-context/ThemeContext';
-import {ArticleName} from '../../common/models/ArticleName';
-import {ArticleLink, ArticleLinkSize} from '../../components/article-link/ArticleLink';
 import {Helmet} from 'react-helmet';
 import {Carousel, ResponsiveEmbed} from 'react-bootstrap';
+import InstagramEmbed from 'react-instagram-embed';
 
 export class HomePage extends React.Component {
 
@@ -34,7 +24,16 @@ export class HomePage extends React.Component {
   };
 
   handleContactsButtonClick = () => {
-    window.scrollTo(0,document.body.scrollHeight);
+    window.scrollTo(0, document.body.scrollHeight);
+    window.mixpanel.track(
+      "Smikwell | contact button click"
+    );
+  };
+
+  handlePhoneClick = () => {
+    window.mixpanel.track(
+      "Smikwell | phone click"
+    );
   };
 
   render() {
@@ -50,7 +49,9 @@ export class HomePage extends React.Component {
               Smikwell
             </div>
             <div>
-              <a className="home__header-phone-link" href="tel:+7(916)466-66-30">
+              <a className="home__header-phone-link"
+                 href="tel:+7(916)466-66-30"
+                 onClick={this.handlePhoneClick}>
                 +7(916) 466-66-30
               </a>
             </div>
@@ -72,7 +73,8 @@ export class HomePage extends React.Component {
                   <li className="home__main-screen-advantages-list-item">Качественно</li>
                   <li className="home__main-screen-advantages-list-item">Умно</li>
                 </ul>
-                <Button className="home__main-screen-contact-button" onClick={this.handleContactsButtonClick}>
+                <Button className="home__main-screen-contact-button"
+                        onClick={this.handleContactsButtonClick}>
                   Связаться
                 </Button>
               </div>
@@ -147,17 +149,92 @@ export class HomePage extends React.Component {
             <div>
               <Carousel>
                 <Carousel.Item>
-                  <div className="home__carousel-item-1"></div>
+                  <div className="home__carousel-item home__carousel-item_1"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item-2"></div>
+                  <div className="home__carousel-item home__carousel-item_2"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item-3"></div>
+                  <div className="home__carousel-item home__carousel-item_3"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_4"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_5"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_6"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_7"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_8"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_9"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_10"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_11"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_12"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_13"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_14"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_15"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_16"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_17"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_18"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -166,11 +243,29 @@ export class HomePage extends React.Component {
           </div>
           <div className="home__video-screen">
             <div className="home__video-title">
-               Видео
+              Видео
             </div>
             <div>
               <ResponsiveEmbed a16by9>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/6rAIaHk8tYU" frameborder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+              </ResponsiveEmbed>
+            </div>
+          </div>
+          <div className="home__video-screen">
+            <div className="home__video-title">
+              Больше фото и видео в instagram
+            </div>
+            <div>
+              <ResponsiveEmbed a16by9 className="home__embed-instagram">
+                <InstagramEmbed
+                  url='https://www.instagram.com/p/Be2eCi0Ha9f/'
+                  // url='https://instagr.am/p/Zw9o4/'
+                  hideCaption
+                  containerTagName='div'
+                  // onLoading={() => {}}
+                  // onSuccess={() => {}}
+                  // onFailure={() => {}}
+                />
               </ResponsiveEmbed>
             </div>
           </div>
@@ -179,7 +274,9 @@ export class HomePage extends React.Component {
               Контакты
             </div>
             <div>
-              <a className="home__header-phone-link" href="tel:+7(916)466-66-30">
+              <a className="home__header-phone-link"
+                 href="tel:+7(916)466-66-30"
+                 onClick={this.handlePhoneClick}>
                 +7(916) 466-66-30
               </a>
               <a className="home__header-phone-link" href="mailto:smikwell@yandex.ru">

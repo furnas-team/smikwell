@@ -32,7 +32,8 @@ app.get("*", (req, res) => {
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
             crossorigin="anonymous"/>
       <link rel="stylesheet" type="text/css" href="/styles.css"/>
-      {/*<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>*/}
+      <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+      <script async defer src="//www.instagram.com/embed.js"></script>
     </head>
     <body>
     <div id="root" dangerouslySetInnerHTML={ {__html: appString} }>
