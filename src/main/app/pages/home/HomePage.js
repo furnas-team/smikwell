@@ -255,7 +255,7 @@ export class HomePage extends React.Component {
             <div className="home__video-title">
               Больше фото и видео в instagram
             </div>
-            <div>
+            <div className="test">
               <ResponsiveEmbed a16by9 className="home__embed-instagram">
                 <InstagramEmbed
                   url='https://www.instagram.com/p/Be2eCi0Ha9f/'
