@@ -11,7 +11,13 @@ mixpanel.init('89c5c0bb6af5172d87b01e9e06839b2e');
 
 //yandex metrika
 if (typeof Ya !== undefined) {
-  window.yaCounter = new Ya.Metrika({id: 49539712});
+  window.yaCounter = new Ya.Metrika({
+    id: 49539712,
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true
+  });
 }
 
 //mouseflow
