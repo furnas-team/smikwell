@@ -24,7 +24,7 @@ export class HomePage extends React.Component {
   };
 
   handleContactsButtonClick = () => {
-    window.scrollTo(0, document.body.scrollHeight);
+    //window.scrollTo(0, document.body.scrollHeight);
     window.mixpanel.track(
       "Smikwell | contact button click"
     );
@@ -74,6 +74,7 @@ export class HomePage extends React.Component {
                   <li className="home__main-screen-advantages-list-item">Умно</li>
                 </ul>
                 <Button className="home__main-screen-contact-button"
+                        href="tel:+7(495)922-7-921"
                         onClick={this.handleContactsButtonClick}>
                   Связаться
                 </Button>

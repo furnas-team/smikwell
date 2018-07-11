@@ -11,6 +11,10 @@
   background-color: $background-red;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+  &:hover {
+    text-decoration: none;
+    color: $font-color-white;
+  }
 
   @include for-desktop-up {
     opacity: 0.8;

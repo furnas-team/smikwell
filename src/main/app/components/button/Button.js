@@ -8,7 +8,8 @@ export class Button extends React.Component {
   static propTypes = {
     className: string,
     children: any,
-    onClick: func
+    onClick: func,
+    href: string
   };
 
   static defaultProps = {
@@ -17,13 +18,14 @@ export class Button extends React.Component {
   };
 
   render() {
-    const {className, children, onClick} = this.props;
+    const {className, children, onClick, href} = this.props;
 
     return (
-      <button className={classNames('button', className)}
-              onClick={onClick}>
+      <a className={classNames('button', className)}
+         href={href}
+         onClick={onClick}>
         {children}
-      </button>
+      </a>
     );
   }
 
