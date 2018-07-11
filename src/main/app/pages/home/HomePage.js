@@ -50,9 +50,9 @@ export class HomePage extends React.Component {
             </div>
             <div>
               <a className="home__header-phone-link"
-                 href="tel:+7(916)466-66-30"
+                 href="tel:+7(495)922-7-921"
                  onClick={this.handlePhoneClick}>
-                +7(916) 466-66-30
+                +7(495) 922-7-921
               </a>
             </div>
           </div>
@@ -275,9 +275,9 @@ export class HomePage extends React.Component {
             </div>
             <div>
               <a className="home__header-phone-link"
-                 href="tel:+7(916)466-66-30"
+                 href="tel:+7(495)922-7-921"
                  onClick={this.handlePhoneClick}>
-                +7(916) 466-66-30
+                +7(495) 922-7-921
               </a>
               <a className="home__header-phone-link" href="mailto:smikwell@yandex.ru">
                 smikwell@yandex.ru
