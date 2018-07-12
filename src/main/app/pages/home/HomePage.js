@@ -28,12 +28,18 @@ export class HomePage extends React.Component {
     window.mixpanel.track(
       "Smikwell | contact button click"
     );
+    if (window.yaCounter) {
+      window.yaCounter.reachGoal('ContactButtonClick');
+    }
   };
 
   handlePhoneClick = () => {
     window.mixpanel.track(
       "Smikwell | phone click"
     );
+    if (window.yaCounter) {
+      window.yaCounter.reachGoal('PhoneLinkClick');
+    }
   };
 
   render() {
