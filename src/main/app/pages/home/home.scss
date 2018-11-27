@@ -100,6 +100,7 @@
     background-color: white;
     width: 100%;
     opacity: 0.8;
+    z-index: 1;
   }
 
   &__header-logo {
@@ -457,6 +458,46 @@
 
   &__contacts-title {
     margin-bottom: 24px;
+  }
+
+  &__place-screen {
+    margin-top: 80px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    @include for-desktop-up {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    @include for-phone-only {
+      margin-top: 32px;
+    }
+  }
+
+  &__place-title {
+    font-family: $font-family;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+    @include for-phone-only {
+      font-size: 18px;
+    }
+  }
+
+  &__place-text {
+    font-family: $font-family;
+    font-size: 16px;
+    color: #0202029e;
+    margin-bottom: 16px;
+    @include for-phone-only {
+      font-size: 16px;
+    }
+    b{
+      color: #000000
+    }
+  }
+
+  &__place-map {
+    border: none;
   }
 
 }
