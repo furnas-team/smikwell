@@ -3,7 +3,7 @@ import app from "./app";
 
 const server = http.createServer(app);
 let currentApp = app;
-server.listen(80);
+server.listen(5555);
 
 if (module.hot) {
   module.hot.accept("./app", () => {
