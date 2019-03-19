@@ -259,18 +259,6 @@ export class HomePage extends React.Component {
               </ResponsiveEmbed>
             </div>
           </div>
-          <div className="home__place-screen">
-            <div className="home__place-title">
-              Где посмотреть готовые кровати
-            </div>
-            <div className="home__place-text">
-              Шоу-рум по адресу: <b>Ярославское шоссе, владение 26 ( на территории МГСУ площадка домиков "Зодчий", на первом этаже дома "Мечта"). </b>
-            </div>
-            <ResponsiveEmbed a16by9>
-              <iframe src="https://yandex.ru/map-widget/v1/-/CBFjI4eB9B" className="home__place-map" width="auto" height="auto" frameBorder="1" allowFullScreen="true"></iframe>
-            </ResponsiveEmbed>
-
-          </div>
           <div className="home__video-screen">
             <div className="home__video-title">
               Видео
