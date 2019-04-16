@@ -490,11 +490,11 @@
 
   &__carousel-item_3_2 {
     background-image: url('images/3/2.jpg');
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    //-webkit-transform: rotate(-90deg);
+    //-moz-transform: rotate(-90deg);
+    //-ms-transform: rotate(-90deg);
+    //-o-transform: rotate(-90deg);
+    //transform: rotate(-90deg);
   }
 
   &__carousel-item_3_3 {
