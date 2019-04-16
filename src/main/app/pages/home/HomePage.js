@@ -56,9 +56,9 @@ export class HomePage extends React.Component {
             </div>
             <div>
               <a className="home__header-phone-link"
-                 href="tel:+7(495)922-7-921"
+                 href="tel:+7(916) 466-6-630"
                  onClick={this.handlePhoneClick}>
-                +7(495) 922-7-921
+                +7(916) 4 6666 30
               </a>
             </div>
           </div>
@@ -154,94 +154,112 @@ export class HomePage extends React.Component {
               Примеры шкаф-кроватей
             </div>
             <div>
-              <Carousel>
+              <div className="home__catalog-title">Шкаф-Кровать с антресолью и пеналом-стойкой </div>
+              <div className="home__catalog-params">Размеры:</div>
+              <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+              <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+              <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+              <div className="home__catalog-params">Цена: </div>
+              <div className="home__catalog-params">Шкаф-Кровать - 96 600; Антресоль - 10 000; Пенал-стойка - 10 000; </div>
+              <div className="home__catalog-params">В зеркальном исполнении - фасад из качественного закалённого зеркала  </div>
+              <div className="home__catalog-params"> и  рамы из натурального дерева (дуб, бук) - 20 000  </div>
+              <Carousel className="home__carousel">
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_1"></div>
+                  <div className="home__carousel-item home__carousel-item_1_1"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_2"></div>
+                  <div className="home__carousel-item home__carousel-item_1_2"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_3"></div>
+                  <div className="home__carousel-item home__carousel-item_1_3"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </div>
+            <div className="home__catalog-item">
+              <div className="home__catalog-title">Шкаф-Кровать-Диван  </div>
+              <div className="home__catalog-params">Размеры:</div>
+              <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+              <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+              <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+              <div className="home__catalog-params">Цена: </div>
+              <div className="home__catalog-params">Шкаф-Кровать-Диван - 114 600   </div>
+              <Carousel className="home__carousel">
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_2_1"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_4"></div>
+                  <div className="home__carousel-item home__carousel-item_2_2"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_5"></div>
+                  <div className="home__carousel-item home__carousel-item_2_3"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_6"></div>
+                  <div className="home__carousel-item home__carousel-item_2_4"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </div>
+            <div className="home__catalog-item">
+              <div className="home__catalog-title">Шкаф-Кровать-Диван с антресолями, шкафами и пеналом-стойкой</div>
+              <div className="home__catalog-params">Размеры:</div>
+              <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+              <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+              <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+              <div className="home__catalog-params">Цена: </div>
+              <div className="home__catalog-params">  Шкаф-Кровать-Диван - 114 600; Антресоль над кроватью - 10 000; Пенал-стойка - 10 000; </div>
+              <div className="home__catalog-params">  Шкафы с антресолями – в зависимости от наполнения около 25 000 за 1м/п</div>
+              <Carousel className="home__carousel">
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_3_1"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_7"></div>
+                  <div className="home__carousel-item home__carousel-item_3_2"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_8"></div>
+                  <div className="home__carousel-item home__carousel-item_3_3"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </div>
+            <div className="home__catalog-item">
+              <div className="home__catalog-title"> Шкаф-Кровать-Диван </div>
+              <div className="home__catalog-params">Размеры:</div>
+              <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+              <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+              <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+              <div className="home__catalog-params">Цена: </div>
+              <div className="home__catalog-params">Шкаф-Кровать-Диван - 114 600   </div>
+              <Carousel className="home__carousel">
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_4_1"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_9"></div>
+                  <div className="home__carousel-item home__carousel-item_4_2"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_10"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_11"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_12"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_13"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_14"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_15"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_16"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_17"></div>
-                  <Carousel.Caption>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className="home__carousel-item home__carousel-item_18"></div>
+                  <div className="home__carousel-item home__carousel-item_4_3"></div>
                   <Carousel.Caption>
                   </Carousel.Caption>
                 </Carousel.Item>
