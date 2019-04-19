@@ -265,6 +265,179 @@ export class HomePage extends React.Component {
                 </Carousel.Item>
               </Carousel>
             </div>
+            <div className="home__catalog-item">
+              <div className="home__catalog-title">  Шкаф-Кровать-Диван с антресолью и пеналами-стойками</div>
+              <div className="home__catalog-params">Размеры:</div>
+              <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1800 </div>
+              <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1800 х 170 </div>
+              <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1926 х 450 </div>
+              <div className="home__catalog-params">Цена: </div>
+              <div className="home__catalog-params">Шкаф-Кровать – 118 600; Антресоль - 15 000; Пенал-стойка – 2 шт. по 10 000;</div>
+              <Carousel className="home__carousel">
+                <Carousel.Item>
+                  <div className="home__carousel-item home__carousel-item_5_1"></div>
+                  <Carousel.Caption>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </div>
+          </div>
+          <div className="home__catalog-item">
+            <div className="home__catalog-title"> Шкаф-Кровать без дивана </div>
+            <div className="home__catalog-params">Размеры:</div>
+            <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+            <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+            <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+            <div className="home__catalog-params">Цена: </div>
+            <div className="home__catalog-params"> Шкаф-Кровать - 96 600; Шкафы рядом – в зависимости от наполнения около 25 000 за 1 м/п</div>
+            <div className="home__catalog-params">Фотопечать на фасаде – 2500 м2</div>
+            <Carousel className="home__carousel">
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_6_1"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_6_2"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_6_3"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+          <div className="home__catalog-item">
+            <div className="home__catalog-title"> Шкаф-Кровать-Диван </div>
+            <div className="home__catalog-params">Размеры:</div>
+            <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+            <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+            <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+            <div className="home__catalog-params">Цена: </div>
+            <div className="home__catalog-params">Шкаф-Кровать-Диван - 114 600; ; Шкафы рядом – в зависимости от наполнения около 25 000 за 1 м/п</div>
+            <div className="home__catalog-params">Фотопечать на фасаде – 2500 м2</div>
+            <Carousel className="home__carousel">
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_7_1"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_7_2"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_7_3"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+          <div className="home__catalog-item">
+            <div className="home__catalog-title">  Шкаф-Кровать-Диван со шкафами</div>
+            <div className="home__catalog-params">Размеры:</div>
+            <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+            <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+            <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+            <div className="home__catalog-params">Цена: </div>
+            <div className="home__catalog-params">Шкаф-Кровать-Диван - 114 600; Антресоль - 10 000; </div>
+            <div className="home__catalog-params">Шкафы рядом – в зависимости от наполнения около 25 000 за 1 м/п</div>
+            <Carousel className="home__carousel">
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_8_1"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_8_2"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_8_3"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+          <div className="home__catalog-item">
+            <div className="home__catalog-title">Шкаф-Кровать-Диван с антресолью и пеналами-стойками</div>
+            <div className="home__catalog-params">Размеры:</div>
+            <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+            <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+            <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+            <div className="home__catalog-params">Цена: </div>
+            <div className="home__catalog-params">Шкаф-Кровать-Диван - 114 600; Антресоль - 10 000; Пеналы-стойки - 3 шт. по 10 000; </div>
+            <div className="home__catalog-params">Каретная стяжка дивана – 10 000 за 1м2 </div>
+            <Carousel className="home__carousel">
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_9_1"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_9_2"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_9_3"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+          <div className="home__catalog-item">
+            <div className="home__catalog-title">Шкаф-Кровать-Диван со шкафами и столом</div>
+            <div className="home__catalog-params">Размеры:</div>
+            <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+            <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+            <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 450 </div>
+            <div className="home__catalog-params">Цена: </div>
+            <div className="home__catalog-params">Шкаф-Кровать-Диван - 114 600;</div>
+            <div className="home__catalog-params">Шкафы рядом – в зависимости от наполнения около 25 000 за 1 м/п</div>
+            <div className="home__catalog-params">Большой стол, который может «Наехать на кровать» - 15 000</div>
+            <Carousel className="home__carousel">
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_10_1"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_10_2"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+          <div className="home__catalog-item">
+            <div className="home__catalog-title">Шкаф-Кровать-Диван с антресолью и пеналами-стойками</div>
+            <div className="home__catalog-params">Размеры:</div>
+            <div className="home__catalog-params">спальное место (Длина х Ширина) – 2200 х 1600 </div>
+            <div className="home__catalog-params">матрас (Длина х Ширина х Высота) – 1950 х 1600 х 170 </div>
+            <div className="home__catalog-params">габариты Шкафа (Высота х Ширина х Глубина): 2171 х 1726 х 400 </div>
+            <div className="home__catalog-params">Цена: </div>
+            <div className="home__catalog-params">Шкаф-Кровать-Диван - 114 600; Антресоль - 10 000; Пеналы-стойки - 3 шт. по 10 000;</div>
+            <Carousel className="home__carousel">
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_11_1"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_11_2"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="home__carousel-item home__carousel-item_11_3"></div>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
           </div>
           <div className="home__video-screen">
             <div className="home__video-title">
